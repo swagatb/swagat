@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}
+    Action Delete
+{% endblock title %}
+{% block content %}
+    <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Action Delete</h1>
+                        <p>Delete action</p>
+                        <form action="" method="post">{% csrf_token %}
+                            <p>Are you sure you want to delete "{{ object }}"?</p>
+                            <input type="submit" class="btn btn-primary" value="Confirm" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+{% endblock content %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}
+    Action Edit
+{% endblock title %}
+{% block content %}
+<div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Action Edit</h1>
+                        <p>Create action</p>
+                        <form class="form-horizontal" action="" method="post">
+                            {% csrf_token %}
+                            {{ form }}
+                            <hr>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                  <input type="submit" class="btn btn-primary" value="Submit"/>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock content %}
